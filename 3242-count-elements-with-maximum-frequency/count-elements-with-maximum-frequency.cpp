@@ -4,7 +4,7 @@ public:
         int count = 0;
         int maxi = 0;
         int ans = 0;
-        map<int,int> mpp;
+       unordered_map<int,int> mpp;
         for(auto it: nums){
             mpp[it]++;
         }
