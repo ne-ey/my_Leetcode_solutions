@@ -1,13 +1,12 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        map<long long,int> mpp;
-        for(auto it:nums){
-            mpp[it]++;
+        //optimal 
+        int n = nums.size();
+        int xor1=0;
+        for(int i = 0;i<n;i++){
+            xor1 = xor1 ^ nums[i];
         }
-        for(auto its:mpp){
-            if(its.second==1) return its.first;
-        }
-        return 0;
+        return xor1;
     }
 };
