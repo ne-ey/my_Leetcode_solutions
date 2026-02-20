@@ -1,6 +1,7 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
+        //better sol
         map<int,int> mpp;
         int n = nums.size();
         for(auto it:nums){
